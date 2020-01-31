@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="DataPane" prefHeight="788.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cleanflight.gui.InternalReportController">
+   <children>
+      <Label layoutX="384.0" layoutY="22.0" text="INTERNAL REPORT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="82.0" layoutY="139.0" text="MOST POPULAR AIRPORTS" />
+      <Label layoutX="82.0" layoutY="347.0" text="TOTAL REVENUE" />
+      <Label layoutX="82.0" layoutY="624.0" text="BEST CUSTOMERS" />
+      <Label layoutX="82.0" layoutY="476.0" text="TOTAL CO2" />
+      <ListView fx:id="airportListView" layoutX="269.0" layoutY="57.0" prefHeight="200.0" prefWidth="508.0" />
+      <ListView fx:id="CustomerListView" layoutX="269.0" layoutY="522.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="222.0" prefWidth="508.0" />
+      <TextField fx:id="co2TF" layoutX="269.0" layoutY="472.0" prefHeight="26.0" prefWidth="203.0" />
+      <TextArea fx:id="TotalRevenueTF" layoutX="269.0" layoutY="282.0" prefHeight="165.0" prefWidth="442.0" />
+   </children>
+</AnchorPane>

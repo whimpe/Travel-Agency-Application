@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="726.0" prefWidth="1334.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cleanflight.gui.CheckFlightController">
+   <children>
+      <AnchorPane fx:id="data2" layoutX="815.0" layoutY="-9.0" prefHeight="726.0" prefWidth="831.0">
+         <children>
+            <Button fx:id="flightbtn" layoutX="185.0" layoutY="169.0" mnemonicParsing="false" onAction="#loadAddFlight" prefHeight="40.0" prefWidth="130.0" text="ADD FLIGHT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="customerbtn" layoutX="185.0" layoutY="343.0" mnemonicParsing="false" onAction="#loadAddcustomer" prefHeight="40.0" prefWidth="130.0" text="ADD CUSTOMER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <ListView fx:id="customerList" layoutX="475.0" layoutY="253.0" prefHeight="152.0" prefWidth="326.0" />
+            <ListView fx:id="flightList" layoutX="475.0" layoutY="41.0" prefHeight="186.0" prefWidth="326.0" />
+            <ComboBox fx:id="cbflight" layoutX="49.0" layoutY="99.0" prefHeight="56.0" prefWidth="402.0" />
+            <ComboBox fx:id="cbcustomer" layoutX="49.0" layoutY="302.0" prefHeight="26.0" prefWidth="402.0" />
+            <CheckBox fx:id="cbInsurance" layoutX="65.0" layoutY="454.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="113.0" text="INSURANCE" />
+            <TextField fx:id="anothercustomer" layoutX="475.0" layoutY="414.0" prefHeight="26.0" prefWidth="326.0" />
+            <Label alignment="CENTER" layoutX="141.0" layoutY="65.0" prefHeight="26.0" prefWidth="218.0" text="POSSIBLE FLIGHTS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="reduc" layoutX="536.0" layoutY="505.0" prefHeight="32.0" prefWidth="202.0" />
+            <Button fx:id="addBookingbtn" layoutX="311.0" layoutY="642.0" mnemonicParsing="false" onAction="#loadAddBooking" prefHeight="80.0" prefWidth="218.0" text="ADD BOOKING">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="518.0" layoutY="480.0" text="PRICE WITH REDUCTION (OPTIONAL)" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="data1" fx:id="data1" layoutX="16.0" layoutY="8.0" prefHeight="679.0" prefWidth="713.0">
+         <children>
+            <Label layoutX="61.0" layoutY="88.0" prefHeight="26.0" prefWidth="83.0" text="ORIGIN" />
+            <Label layoutX="60.0" layoutY="142.0" prefHeight="32.0" prefWidth="150.0" text="DESTINATION" />
+            <Label layoutX="64.0" layoutY="225.0" prefHeight="32.0" prefWidth="182.0" text="DATE" />
+            <Label layoutX="60.0" layoutY="283.0" prefHeight="32.0" prefWidth="190.0" text="NUMBER OF PERSONS" />
+            <Label layoutX="60.0" layoutY="343.0" prefHeight="32.0" prefWidth="150.0" text="MAX PRICE" />
+            <ComboBox fx:id="cbOrigin" layoutX="228.0" layoutY="88.0" prefHeight="26.0" prefWidth="378.0" />
+            <ComboBox fx:id="cbDestination" layoutX="229.0" layoutY="145.0" prefHeight="26.0" prefWidth="377.0" />
+            <DatePicker fx:id="dpStart" layoutX="229.0" layoutY="227.0" />
+            <TextField fx:id="RoD" layoutX="607.0" layoutY="226.0" prefHeight="26.0" prefWidth="90.0" />
+            <TextField fx:id="txtAmountSeats" layoutX="229.0" layoutY="286.0" />
+            <TextField fx:id="highprice" layoutX="229.0" layoutY="346.0" />
+            <TextField fx:id="highco2" layoutX="229.0" layoutY="406.0" />
+            <AnchorPane fx:id="dataPane3" layoutX="34.0" layoutY="562.0" minWidth="-Infinity" prefHeight="246.0" prefWidth="657.0" />
+            <Line endX="792.7999877929688" endY="222.0" layoutX="-80.0" layoutY="-250.0" startX="792.7999877929688" startY="1116.699951171875" />
+            <Button fx:id="BtnFindFlights" layoutX="218.0" layoutY="500.0" mnemonicParsing="false" onAction="#loadSelectedFlights" prefHeight="80.0" prefWidth="247.0" text="FIND FLIGHTS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Label layoutX="61.0" layoutY="411.0" text="MAX CO2" />
+            <Label layoutX="501.0" layoutY="230.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="150.0" text="RANGE (DAYS)" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

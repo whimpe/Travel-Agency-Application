@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="DataPane" fx:id="DataPane" prefHeight="627.0" prefWidth="988.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cleanflight.gui.AllBookingsController">
+   <children>
+      <ListView fx:id="BookingListView" layoutX="32.0" layoutY="76.0" prefHeight="537.0" prefWidth="925.0" />
+      <Label layoutX="413.0" layoutY="32.0" text="LIST OF BOOKINGS">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

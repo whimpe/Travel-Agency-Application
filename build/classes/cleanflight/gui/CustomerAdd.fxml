@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cleanflight.gui.CustomerAddController">
+   <children>
+      <ComboBox fx:id="cbCountry" layoutX="337.0" layoutY="178.0" prefHeight="26.0" prefWidth="190.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="157.0" layoutY="29.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="140.0" text="FIRST NAME" />
+      <Label alignment="CENTER" layoutX="163.0" layoutY="182.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="128.0" text="COUNTRY" />
+      <Label alignment="CENTER" layoutX="144.0" layoutY="82.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="165.0" text="LAST NAME" />
+      <Label alignment="CENTER" layoutX="163.0" layoutY="240.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="128.0" text="DATE OF BIRTH" />
+      <Button fx:id="addCustomerBtn" layoutX="254.0" layoutY="400.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addCustomer" prefHeight="62.0" prefWidth="196.0" text="ADD CUSTOMER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="txtFirst_Name" layoutX="338.0" layoutY="25.0" prefHeight="26.0" prefWidth="190.0" />
+      <TextField fx:id="txtLast_Name" layoutX="337.0" layoutY="78.0" prefHeight="26.0" prefWidth="190.0" />
+      <TextField fx:id="intPassportNr" layoutX="338.0" layoutY="127.0" prefHeight="26.0" prefWidth="190.0" />
+      <Label alignment="CENTER" layoutX="151.0" layoutY="132.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="140.0" text="PASSPORT NUMBER" />
+      <Label alignment="CENTER" layoutX="163.0" layoutY="344.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="128.0" text="PHONE NUMBER" />
+      <Label alignment="CENTER" layoutX="163.0" layoutY="296.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="128.0" text="EMAIL" />
+      <TextField fx:id="txtEmail" layoutX="338.0" layoutY="292.0" prefHeight="26.0" prefWidth="190.0" />
+      <TextField fx:id="txtPhone_nbr" layoutX="338.0" layoutY="340.0" prefHeight="26.0" prefWidth="190.0" />
+      <DatePicker fx:id="dpDob" layoutX="335.0" layoutY="236.0" prefHeight="26.0" prefWidth="190.0" />
+   </children>
+</AnchorPane>

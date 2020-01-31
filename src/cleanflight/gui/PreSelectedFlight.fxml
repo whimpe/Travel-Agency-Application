@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+      <ListView fx:id="flightList" layoutX="127.0" layoutY="35.0" prefHeight="279.0" prefWidth="324.0" />
+
